@@ -151,8 +151,8 @@ li:first-child a {
   /*margin-right: 200px;*/
   position: absolute;
   /*float: left;*/
-  margin-left: 250px;
-  width: 81%;
+  margin-left: 253px;
+  width: 80%;
   min-width: 300px;
 }
 
@@ -160,13 +160,16 @@ li:first-child a {
   transform: translate3d(0px, -18px, 0px) skewY(-4.5deg);
 }
 
-.top-desc {
-  margin-top: 50px;
-}
+
 
 .descrip {
   transform: translate3d(0px, -18px, 0px) skewY(-4.5deg);
   width: 100%;
+  margin-top: 60px;
+}
+
+.top-desc {
+  margin-top: 70px;
 }
 
 .proj-link-icon {
