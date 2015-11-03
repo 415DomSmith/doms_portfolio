@@ -177,6 +177,20 @@ li:first-child a {
   height: 20px;
 }
 
+.project-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+.project-link:hover {
+  color: black;
+}
+
+.project-link:active{
+  color: black;
+}
+
 .link-skew-box {
   transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); 
   overflow: hidden; 
@@ -186,6 +200,12 @@ li:first-child a {
   /*background-size: 1060px 155px;*/
   margin-top: 10px;
 }
+
+.link-skew-box:hover {
+  border-top: 5px;
+  border-bottom: 5px;
+}
+
 
 .link-skew-container {
   transform: skewY(-4.5deg); 
