@@ -192,7 +192,7 @@ li:first-child a {
 }
 
 .link-skew-box {
-  transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); 
+  /*transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); */
   overflow: hidden; 
   outline: transparent solid 1px; 
   width: 102%; 
@@ -263,4 +263,57 @@ li:first-child a {
   transform: translate3d(0px, 0px, 1px); 
   background-image: url(./public/img-overlay.png);
 }
+
+
+/* Ripple In */
+@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.hvr-ripple-in {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); 
+}
+.hvr-ripple-in:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 4px;
+  top: -12px;
+  right: -12px;
+  bottom: -12px;
+  left: -12px;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.hvr-ripple-in:hover:before, .hvr-ripple-in:focus:before, .hvr-ripple-in:active:before {
+  -webkit-animation-name: hvr-ripple-in;
+  animation-name: hvr-ripple-in;
+}
+
+
 
