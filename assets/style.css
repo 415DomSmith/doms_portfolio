@@ -192,7 +192,7 @@ li:first-child a {
 }
 
 .link-skew-box {
-  transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); 
+  transform: translate3d(0px, -18px, 0px) skewY(-5deg); 
   overflow: hidden; 
   outline: transparent solid 1px; 
   width: 102%; 
