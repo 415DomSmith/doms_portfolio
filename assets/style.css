@@ -192,13 +192,13 @@ li:first-child a {
 }
 
 .link-skew-box {
-  /*transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); */
+  transform: translate3d(0px, -18px, 0px) skewY(-4.5deg); 
   overflow: hidden; 
   outline: transparent solid 1px; 
   width: 102%; 
   height: 255px; 
   /*background-size: 1060px 155px;*/
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .link-skew-box:hover {
